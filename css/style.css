@@ -1,0 +1,114 @@
+body {
+    background-image: url(../img/pexels-cmonphotography-1809644.jpg);
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+ display: flex;
+    justify-content: center;   
+} */
+h1 {
+    color: #22A699;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.tab-links a {
+    margin-top: 10px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #22A699;
+    transition: all 0.5s ease;
+}
+
+.tab-links a:hover {
+    margin-top: 10px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #F29727;
+    transition: all 0.5s ease;
+}
+
+.tab-link {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    text-decoration: none;
+    color: #333;
+}
+
+.tab-link:hover {
+    background-color: #e0e0e0;
+}
+
+.tab-link.active {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.tab-content {
+    border: 1px solid #22A699;
+    margin-top: 20px;
+    /* margin-left: 10px; */
+    box-shadow: rgb(34, 166, 153) 0px 1px 4px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab .active {}
+
+.btn-submit {
+    background-color: #22A699;
+    border: none;
+    width: 10%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: rgb(34, 166, 153) 0px 1px 4px;
+}
+
+.btn-submit:hover {
+    background-color: #4C4C6D;
+    transition: all 0.5s ease-in-out;
+}
+
+.result_area {
+    /* border: 1px solid #22A699; */
+    box-shadow: rgb(34, 166, 153) 0px 1px 4px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.input_group {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.input_group:focus {
+    box-shadow: rgb(34, 166, 153) 0px 1px 4px;
+}
+
+.input_group::placeholder {
+    padding-left: 10px;
+
+}
