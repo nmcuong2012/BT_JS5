@@ -30,7 +30,7 @@
             <a href="#" class="tab-link active" data-tab="tab1" onclick="changeTab(event, 'tab1')">Bài 1</a>
             <a href="#" class="tab-link" data-tab="tab2" onclick="changeTab(event, 'tab2')">Bài 2</a>
             <a href="#" class="tab-link" data-tab="tab3" onclick="changeTab(event, 'tab3')">Bài 3</a>
-            <a href="#" class="tab-link" data-tab="tab4" onclick="changeTab(event, 'tab3')">Bài 4</a>
+            <a href="#" class="tab-link" data-tab="tab4" onclick="changeTab(event, 'tab4')">Bài 4</a>
           </div>
           <!------------------------- BAI 1------------------------- -->
           <div class="tab-content col-11">
@@ -80,7 +80,7 @@
               </div>
               <div class="result_area">
                 <label class="fa-solid fa-arrow-right mx-5 fs-1 text-white my-5"></label>
-                <label id="lbl-ex2" class=" text-white fs-1"></label>
+                <label id="lbl-ex2" class=" text-white fs-2"></label>
               </div>
             </div>
             <!------------------------- BAI 2------------------------- -->
@@ -100,30 +100,34 @@
                 </button>
               </div>
               <div class="result_area">
-                <label class="fa-solid fa-arrow-right mx-5 fs-1 text-white my-5" id="lbl-ex3"></label>
+                <label class="fa-solid fa-arrow-right mx-5 fs-1 text-white my-5" ></label>
+                <label class="text-white fs-2" id="lbl-ex3"></label>
               </div>
             </div>
             <!------------------------- BAI 3------------------------- -->
             
              <!------------------------- BAI 4------------------------- -->
-            <div id="tab3" class="tab row">
-              <div class="text-center">
+            <div id="tab4" class="tab row">
+              <div class="">
                 <h1 class="fw-bold text-center mt-1">Tính tiền cáp</h1>
-                <select class="col-3 mb-3 py-2 mx-5 input_group" id="ex4-people">
-                  <option value="" disabled selected>Chọn loại khách hàng</option>
-                  <option value="option1">Nhà dân<nav></nav></option>
-                  <option value="option2">Doanh nghiệp</option>
+                <select class="col-3 mb-3 py-2 mx-5 input_group" id="ex4-drop" onchange="showExtraInput()">
+                  <option value="0" disabled selected>Chọn loại khách hàng</option>
+                  <option value="1">Nhà dân</option>
+                  <option value="2">Doanh nghiệp</option>
                 </select>
-                <input type="text" class="col-3 mb-3 py-2 mx-5 input_group" placeholder="Nhập mã khách hàng" id="ex4-salary">
-                <input type="number" class="col-3 mb-3 py-2 mx-5 input_group" placeholder="Số kênh cao cấp" id="ex4-people">
+                <input type="text" class="col-3 mb-3 py-2 mx-5 input_group" placeholder="Nhập mã khách hàng" id="ex4-id">
+                <input type="number" class="col-3 mb-3 py-2 mx-5 input_group" placeholder="Số kênh cao cấp" id="ex4-channel">
+                <input type="number" class="col-3 mb-3 py-2 mx-5 input_group" style="display: none;" placeholder="Số kết nối" id="ex4-connect">
+
               </div>
               <div class="text-center my-5">
-                <button id="btn-ex4" class="text-white btn-submit mx-5">
+                <button id="btn-ex4" class="text-white btn-submit mx-5" onclick="cacuConnect()">
                   Kết quả
                 </button>
               </div>
               <div class="result_area">
-                <label class="fa-solid fa-arrow-right mx-5 fs-1 text-white my-5" id="lbl-ex4"></label>
+                <label class="fa-solid fa-arrow-right mx-5 fs-1 text-white my-5"></label>
+                <label class="text-white fs-2" id="lbl-ex4"></label>
               </div>
             </div>
              <!------------------------- BAI 4------------------------- -->
